@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "formulahendry.auto-complete-tag",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "ecmel.vscode-html-css",
+    "ms-vscode.vscode-typescript-next",
+    "csstools.postcss",
+    "esbenp.prettier-vscode",
+    "rvest.vs-code-prettier-eslint",
+    "streetsidesoftware.code-spell-checker-russian",
+    "bradlc.vscode-tailwindcss",
+    "hex-ci.stylelint-plus"
+  ]
+}

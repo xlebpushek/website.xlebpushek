@@ -1,0 +1,30 @@
+{
+  "name": "website.xlebpushek",
+  "description": "Personal website-portfolio of developer Xlebp Rjanoi (Xlebpushek)",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Xlebp Rjanoi",
+    "email": "xlebpushek@gmail.com",
+    "url": "https://www.xlebpushek.site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xlebpushek/website.xlebpushek.git"
+  },
+  "homepage": "https://xlebpushek.site/works/websites/xlebpushek",
+  "bugs": {
+    "url": "https://github.com/xlebpushek/website.xlebpushek/issues"
+  },
+  "scripts": {
+    "client:dev": "cd client && yarn run client:dev",
+    "client:build": "cd client && yarn run client:build",
+    "client:start": "cd client && yarn run client:start",
+    "client:lint": "cd client && yarn run client:lint",
+    "client:eslint": "cd client && yarn run client:eslint",
+    "client:eslint:fix": "cd client && yarn run client:eslint:fix",
+    "client:stylelint": "cd client && yarn run client:stylelint",
+    "client:stylelint:fix": "cd client && yarn run client:stylelint:fix"
+  }
+}

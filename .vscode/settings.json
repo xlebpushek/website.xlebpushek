@@ -1,0 +1,35 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.quickSuggestions": {
+    "comments": "inline",
+    "strings": "on"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "stylelint.useLocal": true,
+  "stylelint.autoFixOnSave": true,
+  "cSpell.language": "en,ru",
+  "cSpell.words": [
+    "keyframes",
+    "nestjs",
+    "Rjanoi",
+    "signin",
+    "stylelint",
+    "tailwindcss",
+    "unspaced",
+    "Xlebp",
+    "xlebpushek"
+  ],
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  }
+}

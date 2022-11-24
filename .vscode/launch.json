@@ -1,0 +1,61 @@
+{
+  "configurations": [
+    {
+      "type": "node-terminal",
+      "name": "Client dev",
+      "request": "launch",
+      "command": "yarn run client:dev",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Client build",
+      "request": "launch",
+      "command": "yarn run client:build",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Client start",
+      "request": "launch",
+      "command": "yarn run client:start",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Client lint",
+      "request": "launch",
+      "command": "yarn run client:lint",
+      "cwd": "${workspaceFolder}"
+    },
+
+    {
+      "type": "node-terminal",
+      "name": "Client eslint",
+      "request": "launch",
+      "command": "yarn run client:eslint",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Client eslint fix",
+      "request": "launch",
+      "command": "yarn run client:eslint:fix",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Client stylelint",
+      "request": "launch",
+      "command": "yarn run client:stylelint",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Client stylelint fix",
+      "request": "launch",
+      "command": "yarn run client:stylelint:fix",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
