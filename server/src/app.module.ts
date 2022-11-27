@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { TypegooseModule } from 'nestjs-typegoose'
-import { AppController } from './app.controller'
 import { AuthModule } from './auth/auth.module'
 import { getMongoDBConfig } from './config/mongodb.config'
 import { TokenModule } from './token/token.module'
@@ -22,6 +21,5 @@ import { UserModule } from './user/user.module'
     TokenModule,
     AuthModule,
   ],
-  controllers: [AppController],
 })
 export class AppModule {}

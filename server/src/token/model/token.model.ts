@@ -7,11 +7,8 @@ export interface TokenModel extends Base {}
 
 export class TokenModel extends TimeStamps {
   @Prop({ required: true })
-  token: string
+  refreshToken: string
 
   @Prop({ required: true, ref: () => UserModel })
   user_id: Types.ObjectId
-
-  @Prop({ required: true })
-  expireAt: Date
 }

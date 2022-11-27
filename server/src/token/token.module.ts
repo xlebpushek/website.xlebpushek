@@ -4,13 +4,19 @@ import { JwtModule } from '@nestjs/jwt'
 import { PassportModule } from '@nestjs/passport'
 import { TypegooseModule } from 'nestjs-typegoose'
 import { getJwtConfig } from 'src/config/jwt.config'
-import { JwtStrategy } from './jwt.strategy'
+import { getPassportConfig } from 'src/config/passport.config'
 import { TokenModel } from './model/token.model'
+import { AccessStrategy } from './strategies/access.strategy'
+import { RefreshStrategy } from './strategies/refresh.strategy'
 import { TokenService } from './token.service'
 
 @Module({
   imports: [
-    PassportModule.register({ defaultStrategy: 'jwt' }),
+    PassportModule.registerAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: getPassportConfig,
+    }),
     JwtModule.registerAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
@@ -25,7 +31,7 @@ import { TokenService } from './token.service'
       },
     ]),
   ],
-  providers: [TokenService, JwtStrategy],
+  providers: [TokenService, AccessStrategy, RefreshStrategy],
   exports: [TokenService],
 })
 export class TokenModule {}
